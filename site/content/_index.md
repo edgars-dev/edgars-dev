@@ -1,5 +1,5 @@
 ---
-title: Great tea with a conscience
+title: Great coffee with a conscience
 subtitle: Support sustainable farming while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:
@@ -38,4 +38,3 @@ values:
     want to turn this around and return the coffee trade to the drink’s
     exhilarating, empowering and unifying nature.
 ---
-
