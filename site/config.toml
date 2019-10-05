@@ -1,8 +1,7 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "edgars.dev"
-theme = "creative"
+title = "Edgars.dev"
 
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
