@@ -1,14 +1,6 @@
 {{ define "main" }}
-<div class="col-xs-12 col-sm-8 col-md-9 content-column white-background">
-  {{ partial "mobile_nav_toggle.html" . }}
-  <div class="row">
-    <div class="col-lg-8">
-      <div class="content-column-content">
-         <h1>{{ .Title }}</h1>
-         {{ .Content }}
-         {{ template "_internal/disqus.html" . }}
-      </div>
-    </div>
-  </div>
-</div>
+
+{{ partial "jumbotron" (dict "imageUrl" "/img/7.jpg" "title" "This is where the heading goes" "subtitle" "This is where the subtitle goes") }}
+{{ .Content }}
+
 {{ end }}
