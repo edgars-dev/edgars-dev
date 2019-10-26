@@ -1,5 +1,5 @@
 ---
-title: Average coffee with a conscience
+title: Average coffee with sugar
 subtitle: Support sustainable farming while enjoying a cup
 image: /img/home-jumbotron.jpg
 blurb:
