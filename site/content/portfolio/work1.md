@@ -1,5 +1,5 @@
 ---
-draft: 'true'
+draft: 'false'
 showonlyimage: 'false'
 title: Woop woop
 date: '2016-11-05T18:25:22+05:30'
@@ -10,6 +10,8 @@ Even the all-powerful Pointing has no control about the blind texts it is an alm
 <!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+![Cool image](/portfolio/trifold.jpg "Cool image")
 
 A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
 
