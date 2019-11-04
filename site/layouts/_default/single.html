@@ -5,6 +5,10 @@
     <div class="col-lg-8">
       <div class="content-column-content">
          <h1>{{ .Title }}</h1>
+         <div class="flex justify-between grey-3">
+           <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+           <p>Read in {{ .ReadingTime }} minutes</p>
+         </div>
          {{ .Content }}
          {{ template "_internal/disqus.html" . }}
       </div>
