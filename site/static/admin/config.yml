@@ -2,7 +2,7 @@ backend:
   name: git-gateway
 
 media_folder: "site/static/img/portfolio" # Folder where user uploaded files should go
-public_folder: "static/img/portfolio"
+public_folder: "img/portfolio"
 
 collections: # A list of collections the CMS should be able to edit
   - name: "portfolio" # Used in routes, ie.: /admin/collections/:slug/edit
@@ -10,8 +10,8 @@ collections: # A list of collections the CMS should be able to edit
     folder: "site/content/portfolio" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
-      - {label: "Draft", name: "draft", widget: "boolean"}
-      - {label: "Show only image", name: "showonlyimage", widget: "boolean"}
+      - {label: "Draft", name: "draft", widget: "boolean", default: true}
+      - {label: "Show only image", name: "showonlyimage", widget: "boolean", default: false}
       - {label: "Weight", name: "weight", widget: "number"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
