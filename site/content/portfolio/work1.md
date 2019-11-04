@@ -1,6 +1,7 @@
 ---
-draft: false
-showonlyimage: false
+settings:
+  draft: false
+  showonlyimage: true
 weight: 1
 title: Woop woop
 date: '2016-11-05T18:25:22+05:30'
