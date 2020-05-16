@@ -1,0 +1,214 @@
+@import "functions";
+@import "custom";
+@import "../../node_modules/photo-sphere-viewer/dist/photo-sphere-viewer.css";
+
+.content-column .content-column-content {
+    blockquote {
+        color: $gray-400;
+        border-left: 6px solid $gray-400;
+        padding-left: $spacer;
+    }
+
+    code {
+        background-color: $gray-100;
+        border-radius: $border-radius-sm;
+        padding: .125rem .2rem;
+    }
+
+    code[class*=language-], pre[class*=language-] {
+        font-family: $font-family-monospace;
+        @include font-size($code-font-size);
+    }
+
+    figure.highlight pre:not([class*=language-]) {
+        padding: 1em;
+        margin: .5em 0;
+        overflow: auto;
+        background-color: $gray-100;
+    }
+
+    pre code {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .latest h2 a, .navbar a, .card > a, a.badge {
+        text-decoration: none;
+    }
+
+    figure.highlight {
+        margin-left: -($grid-gutter-width / 2);
+        margin-right: -($grid-gutter-width / 2);
+
+        @include media-breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+
+    img[data-src] {
+        opacity: 0;
+        @include transition($transition-fade);
+
+        &.loaded {
+            opacity: 1;
+        }
+    }
+}
+
+
+.content-column .content-column-content {
+    font-family: Roboto,sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #0c344b;
+    text-align: left;
+    font-size: 16px;
+    > * {
+        font-size: 1.125em;
+        color: #0c344b;
+    }
+    .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 1.25rem;
+        font-family: Open Sans,sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+        color: #082333;
+    }
+
+    .h1, h1 {
+        font-size: 2.8125em;
+    }
+
+    .h2, h2 {
+        font-size: 2.25em;
+    }
+
+    .h3, h3 {
+        font-size: 1.96875em;
+    }
+
+    .h4, h4 {
+        font-size: 1.6875em;
+    }
+
+    .h5, h5 {
+        font-size: 1.40625em;
+    }
+
+    blockquote {
+        > p {
+            color: $gray-400;
+        }
+        border-left: 6px solid $gray-400;
+        padding: 0 0 0 1.125em !important;
+        margin: 0 0 1em !important;
+    }
+
+    code {
+        background-color: $gray-100;
+        border-radius: $border-radius-sm;
+        padding: .125em .2em;
+        color: unset;
+    }
+
+    code[class*=language-], pre[class*=language-] {
+        font-family: $font-family-monospace;
+    }
+
+    figure.highlight pre:not([class*=language-]) {
+        padding: 1em;
+        margin: .5em 0;
+        overflow: auto;
+        background-color: $gray-100;
+    }
+
+    pre code {
+        padding: 0;
+        background-color: transparent;
+    }
+
+    .latest h2 a, .navbar a, .card > a, a.badge {
+        text-decoration: none;
+    }
+
+    figure.highlight {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    img[data-src] {
+        opacity: 0;
+        &.loaded {
+            opacity: 1;
+        }
+    }
+
+    .blockquote {
+        margin-bottom: 1.125em;
+        font-size: 1.125em;
+    }
+
+    sub, sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+
+    sup {
+        top: -.5em;
+    }
+
+    .table .thead-dark th {
+        color: #fff;
+        background-color: #0c344b;
+        border-color: #114b6c;
+    }
+
+    .table td, .table th {
+        padding: .75em;
+        vertical-align: top;
+        border-top: 1px solid #adbcc4;
+    }
+
+    ul {
+        li {
+            list-style-type: disc !important;
+            &::before {
+                content: "" !important;
+                margin: 0 !important;
+            }
+        }
+    }
+}
+
+.content-column .content-column-content  {
+    p, li {
+        color: #0c344b;
+    }
+    p {
+        margin-bottom: 1.5em;
+        margin-top: 0;
+    }
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#viewer {
+    width: 100%;
+    height: 300px;
+}
+
+.box-masonry-show-only-image-full-link {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
