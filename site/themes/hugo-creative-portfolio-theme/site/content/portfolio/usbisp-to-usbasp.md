@@ -1,8 +1,8 @@
 ---
 title: USBISP to USBASP
-date: 2020-05-17T14:27:34.114Z
-showonlyimage: false
+showonlyimage: true
 draft: false
+date: 2016-11-05T18:25:22+05:30
 weight: 0
 ---
 I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention.
