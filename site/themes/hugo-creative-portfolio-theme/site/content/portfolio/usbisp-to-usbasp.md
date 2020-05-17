@@ -1,11 +1,11 @@
 ---
 title: USBISP to USBASP
-showonlyimage: true
+showonlyimage: false
 draft: false
 date: 2016-11-05T18:25:22+05:30
 weight: 0
 ---
-I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention.
+Changed. I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention.
 Turns out it can be easy modified to work as USBASP. Just by changing firmware.
 <!--more-->
 I found tutorial on how to do it, borrowed a working USBASP from a friend and was almost sure it shouldn't take longer than 10 mins to do the trick. But there were some difficulties.
