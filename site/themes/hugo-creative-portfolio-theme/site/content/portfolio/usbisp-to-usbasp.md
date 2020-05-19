@@ -3,7 +3,7 @@ title: USBISP to USBASP
 showonlyimage: false
 draft: false
 date: 2020-05-19T07:37:37.385Z
-weight: 0
+weight: 1
 ---
 Why this is a link? Changed from admin panel. I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention.
 Turns out it can be easy modified to work as USBASP. Just by changing firmware.
