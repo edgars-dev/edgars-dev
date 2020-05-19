@@ -219,11 +219,6 @@
         text-transform: unset;
     }
 
-    .box-masonry-description  {
-        > p {
-            color: $body-color;
-        }
-    }
 
     > a {
         &:hover {
@@ -231,6 +226,11 @@
         }
     }
 
+}
+.box-masonry-description  {
+    > p {
+        color: $body-color;
+    }
 }
 
 .sidebar-content {
