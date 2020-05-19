@@ -19,12 +19,4 @@ $(function() {
       $(this).attr("target", "_blank");
     }
   });
-
-  let viewerEl = $('#viewer');
-  if (viewerEl) {
-    let viewer = new Viewer({
-      container: viewerEl[0],
-      panorama: viewerEl.attr('attr-src')
-    });
-  }
 });
