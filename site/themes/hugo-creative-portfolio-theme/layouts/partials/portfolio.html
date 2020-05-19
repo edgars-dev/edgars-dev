@@ -21,9 +21,10 @@
                       {{ else }}
                       <div class="box-masonry-text">
                       {{ end }}
-                          <h4><a href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                      <a href="{{ .Permalink }}">
+                          <h4>{{ .Title }}</h4>
                           <div class="box-masonry-description">
-                              <p>{{ .Date.Format "January 2, 2006" }}</p>
+                            <p class="box-masonry-description-date text-muted text-uppercase">{{ .Date.Format "January 2, 2006" }}</p>
                             <p>
                                 {{ if .Description }}
                                   {{ .Description }}
@@ -32,6 +33,7 @@
                                 {{ end }}
                             </p>
                           </div>
+                      </a>
                       </div>
                   </div>
               </div>

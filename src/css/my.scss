@@ -212,3 +212,23 @@
     top: 0;
     bottom: 0;
 }
+
+
+.box-masonry .box-masonry-text {
+    h4 {
+        text-transform: unset;
+    }
+
+    .box-masonry-description  {
+        > p {
+            color: $body-color;
+        }
+    }
+
+    > a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+}
