@@ -238,3 +238,15 @@
 .sidebar-content {
     padding: 0 !important;
 }
+
+.clear-tag-button {
+    border-radius: 5px;
+    border: 0;
+    background-color: $gray-400;
+    color: $gray-100;
+    margin-left: -3px;
+    margin-bottom: 15px;
+    &:hover {
+        background-color: $gray-500;
+    }
+}
