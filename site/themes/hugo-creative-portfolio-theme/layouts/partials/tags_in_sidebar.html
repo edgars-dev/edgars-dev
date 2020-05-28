@@ -13,7 +13,7 @@
   {{ end }}
   <div>
       {{ range $s | uniq }}
-        <a href="/portfolio?tag={{ . }}" class="text-gray-light">{{ . }}</a>
+        <a href="/?tag={{ . }}" class="text-gray-light">{{ . }}</a>
       {{ end }}
   </div>
 </div>
