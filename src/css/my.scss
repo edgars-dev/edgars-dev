@@ -217,22 +217,21 @@
     border-radius: 7px;
 }
 
-.box-masonry .box-masonry-text {
-    h4 {
-        text-transform: unset;
-    }
+.box-masonry {
+    .box-masonry-text, .box-masonry-hover-text-header {
+        h4 {
+            text-transform: unset !important;
+        }
+        p + p {
+            color: #0c344b !important;
+        }
 
+    }
 
     > a {
         &:hover {
-            text-decoration: none;
+            text-decoration: none !important;
         }
-    }
-
-}
-.box-masonry-description  {
-    > p {
-        color: $body-color;
     }
 }
 
