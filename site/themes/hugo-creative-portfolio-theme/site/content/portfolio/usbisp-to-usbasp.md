@@ -5,12 +5,13 @@ draft: false
 date: 2020-05-19T07:37:37.385Z
 tags:
   - adasdd
-  - asdadsad
-weight: 1
+  - howto
+weight: 8
 ---
-Why this is a link? Changed from admin panel. I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention.
-Turns out it can be easy modified to work as USBASP. Just by changing firmware.
+Why this is a link? Changed from admin panel. I needed USBASP programmer and recently I bought this [USBISP](https://www.ebay.com/itm/262136733478) by inattention. Turns out it can be easy modified to work as USBASP. Just by changing firmware.
+
 <!--more-->
+
 I found tutorial on how to do it, borrowed a working USBASP from a friend and was almost sure it shouldn't take longer than 10 mins to do the trick. But there were some difficulties.
 
 So, let's begin. You gonna need a working USBASP programmer.
@@ -33,6 +34,7 @@ MMEGA88              MEGA48               MEGA8 TARGET=atmega88      TARGET=atme
       /* all outputs except PD2 = INT0 */
       DDRD = ~(1 << 2);
   ```
+
   and replace last line so that it looks like this
 
 ```
@@ -58,15 +60,16 @@ change "m88" accordingly mcu to "m8" or "m48" if needed. Press Enter, wait for f
 
 Git with modified source files and .hex file for MEGA88 here: [USBISP-USBASP](https://github.com/edgars-dev/USBISP-USBASP)
 
-References:
-http://club.dx.com/reviews/151604/565379
+References: http://club.dx.com/reviews/151604/565379
 http://www.sciencetronics.com/greenphotons/?p=938
 
 **Update:**
 
-After I did all the firmware changes I also had to make some hardware changes.
-The problem was that after this newly made USBASP is connected to computer, it enumerates itself, everything ok. After another device is connected to this device's programming port (for example Arduino MEGA), which is not powered by anything else, then for a shot moment USBASP kinda loses power. It is still listed in device list in Linux bash after command "lsusb", but it doesn't work anymore until it's unplugged and plugged back.
+After I did all the firmware changes I also had to make some hardware changes. The problem was that after this newly made USBASP is connected to computer, it enumerates itself, everything ok. After another device is connected to this device's programming port (for example Arduino MEGA), which is not powered by anything else, then for a shot moment USBASP kinda loses power. It is still listed in device list in Linux bash after command "lsusb", but it doesn't work anymore until it's unplugged and plugged back.
 I fixed this by soldering two tantal capacitors on power line. See pictures below.
 
 ![](/img/portfolio/file_001.jpeg)
-![](/img/portfolio/file_000-1.jpeg)
+
+![čau](/img/about-single-origin.jpg "Īstā bilde")
+
+ ![](/img/portfolio/file_000-1.jpeg)
