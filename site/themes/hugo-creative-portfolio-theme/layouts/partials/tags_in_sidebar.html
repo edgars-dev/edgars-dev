@@ -1,0 +1,19 @@
+<div class="tags">
+  <div class="text-muted">Tags:</div>
+  {{ $page := .GetPage "portfolio" }}
+  {{ $s := slice "" }}
+  {{ range $page.Pages }}
+
+  {{ if .Params.tags }}
+    {{ range .Params.tags }}
+        {{ $s = $s | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ end }}
+  <div>
+      {{ range $s | uniq }}
+        <a href="/portfolio?tag={{ . }}" class="text-gray-light">{{ . }}</a>
+      {{ end }}
+  </div>
+</div>
