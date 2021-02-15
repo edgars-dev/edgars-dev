@@ -18,16 +18,15 @@ So, let's begin. You gonna need a working USBASP programmer.
 * First grab firmware files from this site
 * Then you have to find out which mcu is used on your newly bought programmer. MEGA8, MEGA48 or MEGA88. Change makefile accordingly
 
-```powershell
-MMEGA88              MEGA48               MEGA8
-TARGET=atmega88      TARGET=atmega48      TARGET=atmega8
-HFUSE=0xdd           HFUSE=0xdd           HFUSE=0xc9
-LFUSE=0xff           LFUSE=0xff           LFUSE=0xef
-```
+| MMEGA88   |  MEGA48  | MEGA8             |
+| --------- | -------- | ----------------- |
+| TARGET=atmega88 | TARGET=atmega48 | TARGET=atmega8 |
+| HFUSE=0xdd | HFUSE=0xdd | HFUSE=0xc9 |
+| LFUSE=0xff | LFUSE=0xff | LFUSE=0xef |
 
 * Also you gonna need to modify source code. In file main.c find this
 
-```c
+```cpp
 int main(void) {  
   uchar i, j;  
   /* no pullups on USB and ISP pins */
