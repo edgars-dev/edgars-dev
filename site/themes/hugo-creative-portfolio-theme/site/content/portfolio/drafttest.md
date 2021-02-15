@@ -1,7 +1,7 @@
 ---
 title: drafttest
-draft: true
-date: 2020-05-28T10:31:05.615Z
+draft: false
+date: 2021-02-15T20:45:21.556Z
 tags:
   - draft
 weight: 1
