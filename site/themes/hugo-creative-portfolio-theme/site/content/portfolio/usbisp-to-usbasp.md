@@ -1,7 +1,7 @@
 ---
 title: USBISP to USBASP
 draft: false
-date: 2021-02-15T21:56:56.069Z
+date: 2016-09-27T20:56:56.069Z
 tags:
   - how to
 image: /img/usbasp.jpg
@@ -25,11 +25,9 @@ HFUSE=0xdd           HFUSE=0xdd           HFUSE=0xc9
 LFUSE=0xff           LFUSE=0xff           LFUSE=0xef
 ```
 
-
-
 * Also you gonna need to modify source code. In file main.c find this
 
-```cpp
+```c
 int main(void) {  
   uchar i, j;  
   /* no pullups on USB and ISP pins */
@@ -38,8 +36,6 @@ int main(void) {
   /* all outputs except PD2 = INT0 */
   DDRD = ~(1 << 2);
 ```
-
-
 
 and replace last line so that it looks like this
 
@@ -54,15 +50,15 @@ int main(void) {
   DDRD = 0x00;
 ```
 
-
-
 * Every variable with PROGMEM at the beginning has to be constant - with "const" before it otherwise it won't compile with newer versions of avrdude. These variables are in files usbdrv.h and usbdrv.c
 * Make .hex file by typing "make main.hex" in Linux bash terminal. Before that - open source files folder with "cd" command.
 * Now you have to short self programming contacts on USBISP device you want to modify. There is a writing on PCB silkscreen at the bottom "<- UP ->". Soldering iron helps a lot.
 * Connect working USBASP programmers 10 pin header to USBISP programmers header one on one.
 * Plug in USBASP in your PC and paste this line in bash
 
-`sudo avrdude -p m88 -c usbasp -U flash:w:main.hex:i`
+```shell
+sudo avrdude -p m88 -c usbasp -U flash:w:main.hex:i
+```
 
 change "m88" accordingly mcu to "m8" or "m48" if needed. Press Enter, wait for firmware to be burned, after that, unplug devices, remove programming jumper wire from newly programmed USBISP which is now USBASP and try it out!
 
