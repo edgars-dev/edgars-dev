@@ -22,7 +22,7 @@ It can detect touch, it has seven LED's for displaying current dice number and i
 
 ###### Algorithm:
 
-I don't have the code for this anymore, but the workflow is simple - mcu is sleeping until the interrupt is occurred by touch sensor pulling up the mcu's interrupt pin. It wakes up, shows last number by doing a "waking up dimming animation" and waits for another touch. Then, if it is released immidiately, it calculates a pseudo random number and does a "slow down rolling animation" until it stops and shows the actual number. But if the hand is still kept on the dice then it is doing rolling animation until released, then slows down and shows the actual number from the time when it was released so this way no pseudo random calculation is done and the result is kinda more natural. Then, if no touches occur in a reasonable time, it goes back to sleep, consuming few microamps.
+I don't have the code for this anymore, but the workflow is simple - mcu is sleeping until the interrupt is occurred by touch sensor pulling up the mcu's interrupt pin. It wakes up, shows last number by doing a "wake up dimming animation" and waits for another touch. Then, if it is released immidiately, it calculates a pseudo random number and does a "slow down rolling animation" until it stops and shows the actual number. But if the hand is still kept on the dice then it is doing rolling animation until released, then slows down and shows the actual number from the time when it was released so this way no pseudo random calculation is done and the result is kinda more natural. Then, if no touches occur in a reasonable time, it goes back to sleep, consuming few microamps.
 
 See video below
 
