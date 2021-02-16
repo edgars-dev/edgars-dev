@@ -1,20 +1,20 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Homepage"
+title = "EDGARS.DEV"
 theme = "hugo-creative-portfolio-theme"
 
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
-googleAnalytics = ""
+googleAnalytics = "G-8MNJXCBPFP"
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
   # Use custom.css for your custom styling
   style = "blue"
   description = "Describe your website"
-  copyright = "&copy;2020 Edgars Grava"
+  copyright = "&copy;2021 Edgars Grava"
   sidebarAbout = [
     "I am a creative illustrator and graphic designer with more than 10 years of experience.",
     "Originally from Toronto, currently based in London."
@@ -31,7 +31,7 @@ googleAnalytics = ""
      # - send a dummy email yourself to confirm your account
      # - click the confirm link in the email from www.formspree.io
      # - you're done. Happy mailing!
-  email = "you@yoursite.com"
+  email = "hello@edgars.dev"
 
     # Optional Matomo analytics (formerly piwik)
       # [params.analytics.matomo]
@@ -57,16 +57,11 @@ googleAnalytics = ""
   url = "contact/"
 
   [params.social]
-  facebook      = "full page or profile url in facebook"
-  googleplus    = "full profile url in googleplus"
-  email         = "email@example.com"
-  twitter       = "full profile url in twitter"
-  linkedin      = "full profile url in linkedin"
-  stackoverflow = "full profile url in stackoverflow"
-  instagram     = "full profile url in instagram"
-  github        = "full profile url in github"
-  youtube       = "full profile url in youtube"
-  whatsapp      = "wa.me service link"
+  email         = "hello@edgars.dev"
+  linkedin      = "https://linkedin.com/in/edgars-grava-002b461a2"
+  github        = "https://github.com/edgars-dev"
+  youtube       = "https://www.youtube.com/channel/UC6sWH3ozHhC-jLR-7spRtuA"
+  telegram      = "full profile url in telegram"
 
 [markup]
   [markup.goldmark]
