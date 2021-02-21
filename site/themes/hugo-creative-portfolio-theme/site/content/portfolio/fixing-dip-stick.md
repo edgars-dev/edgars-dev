@@ -7,11 +7,11 @@ tags:
 image: /img/img_2705.jpg
 weight: 1
 ---
+My car\'s dip stick got broken. The plastic part of it. Last time when I was looking for one to buy at junkyard it took me a lot of time for even finding one for sale. 
+<!--more-->
+Long story short - it is rare. So this time I decided to spend less time and money and fix the broken one. 
 
-
-My car's dip stick got broken. The plastic part of it. Last time when I was looking for one to buy at junkyard it took me a lot of time for even finding one for sale. Long story short - it is rare. So this time I decided to spend less time and money and fix the broken one. 
-
-Unfortunately I don't have any pictures of this thing broken. The plastic part was broken in two pieces, along the groove where rubber ring seal goes. 
+Unfortunately I don\'t have any pictures of this thing broken. The plastic part was broken in two pieces, along the groove where rubber ring seal goes. 
 
 ![](/img/1.jpg)
 
