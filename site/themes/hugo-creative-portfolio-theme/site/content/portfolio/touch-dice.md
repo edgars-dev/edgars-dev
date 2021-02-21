@@ -9,7 +9,9 @@ weight: 1
 ---
 ![Dice](/img/img_0246.jpg "Dice")
 
-This is one of my first finished projects. At the time when I was studying at College I wanted to build something so that it is finished, because back then usually I lost interest to finish the project once I found out how to do it. So I decided to make something simple but till the point that I can say that it is finished and show it to somebody else who is not related to electronics engineering and still would understand it.
+This is one of my first finished projects. At the time when I was studying at College I wanted to build something so that it is finished, because back then usually I lost interest to finish the project once I found out how to do it. 
+<!--more-->
+So I decided to make something simple but till the point that I can say that it is finished and show it to somebody else who is not related to electronics engineering and still would understand it.
 
 ###### Hardware:
 
