@@ -9,7 +9,7 @@ weight: 1
 ---
 ![](/img/can.jpg)
 
-I was interested to play around with CAN bus. First it was interesting to just scan those messages and do something when specific message is \"heard\". Then I wanted try to control devices in can bus also.
+I was interested to play around with CAN bus. First it was interesting to just scan those messages and do something when specific message is *heard*. Then I wanted try to control devices in can bus also.
 
 <!--more-->
 
