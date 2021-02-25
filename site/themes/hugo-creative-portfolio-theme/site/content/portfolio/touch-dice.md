@@ -4,10 +4,10 @@ draft: false
 date: 2012-07-08T16:34:00.000Z
 tags:
   - for fun
-image: /img/img_0246.jpg
+image: /img/dice.jpg
 weight: 1
 ---
-![Dice](/img/img_0246.jpg "Dice")
+![Dice](/img/dice.jpg "Dice")
 
 This is one of my first finished projects. At the time when I was studying at College I wanted to build something so that it is finished, because back then usually I lost interest to finish the project once I found out how to do it. 
 <!--more-->
