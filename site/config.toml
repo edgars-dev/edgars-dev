@@ -14,10 +14,10 @@ googleAnalytics = "G-8MNJXCBPFP"
   # Use custom.css for your custom styling
   style = "blue"
   description = "Describe your website"
-  copyright = "&copy;2021 Edgars Grava"
+  copyright = "&copy;2021 Edgars G"
   sidebarAbout = [
-    "I am a creative illustrator and graphic designer with more than 10 years of experience.",
-    "Originally from Toronto, currently based in London."
+    "I have some experience in technical stuff, electronics, programming, 3D modeling, mechanical and product design.",
+    "Based in Riga, Latvia."
   ]
   # Contact page
      # Since this template is static, the contact form uses www.formspree.io as a
@@ -61,7 +61,7 @@ googleAnalytics = "G-8MNJXCBPFP"
   linkedin      = "https://linkedin.com/in/edgars-grava-002b461a2"
   github        = "https://github.com/edgars-dev"
   youtube       = "https://www.youtube.com/channel/UC6sWH3ozHhC-jLR-7spRtuA"
-  telegram      = "/"
+  telegram      = "https://www.t.me/Edgars008"
 
 [markup]
   [markup.goldmark]
