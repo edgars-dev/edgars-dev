@@ -79,6 +79,10 @@ googleAnalytics = "G-8MNJXCBPFP"
     target = "static"
 
   [[module.mounts]]
+    source = "static"
+    target = "static"
+
+  [[module.mounts]]
     source = "themes/hugo-creative-portfolio-theme/layouts"
     target = "layouts"
 
