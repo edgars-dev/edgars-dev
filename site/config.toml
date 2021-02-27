@@ -62,6 +62,7 @@ googleAnalytics = "G-8MNJXCBPFP"
   github        = "https://github.com/edgars-dev"
   youtube       = "https://www.youtube.com/channel/UC6sWH3ozHhC-jLR-7spRtuA"
   telegram      = "https://www.t.me/Edgars008"
+  thingiverse   = "https://www.thingiverse.com/edgars008/designs"
 
 [markup]
   [markup.goldmark]

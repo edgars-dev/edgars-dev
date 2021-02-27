@@ -49,4 +49,9 @@
     <i class="fab fa-telegram-plane"></i>
   </a>
   {{end}}
+  {{ with .Site.Params.social.thingiverse }}
+  <a href="{{ . }}" data-animate-hover="pulse" class="external no-hover-underline">
+    <b>T</b>
+  </a>
+  {{end}}
 </p>

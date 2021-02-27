@@ -1,9 +1,9 @@
-<div class="col-xs-12 col-sm-8 col-md-9 content-column">
+<div class="col-xs-12 col-md-9 content-column">
     {{ partial "mobile_nav_toggle.html" . }}
     <div class="grid">
         <div class="row">
           {{ range .Data.Pages }}
-              <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 masonry-item" data-tags="{{ if .Params.tags }} {{ range .Params.tags }} {{ . }} {{ end }} {{ end }}">
+              <div class="col-xs-12 col-sm-6 col-lg-4 col-xl-3 masonry-item" data-tags="{{ if .Params.tags }} {{ range .Params.tags }} {{ . }} {{ end }} {{ end }}">
                   <div class="box-masonry">
                       <a href="{{ .Permalink }}">
                       {{ if and (isset .Params "image") .Params.image }}
@@ -22,7 +22,7 @@
                       {{ end }}
                           <h4>{{ .Title }}</h4>
                           <div class="box-masonry-description">
-                            <p class="box-masonry-description-date text-muted text-uppercase">{{ .Date.Format "January 2, 2006" }}</p>
+                            <p class="box-masonry-description-date text-uppercase">{{ .Date.Format "January 2, 2006" }}</p>
                             <p>
                                 {{ if .Description }}
                                   {{ .Description | plainify}}

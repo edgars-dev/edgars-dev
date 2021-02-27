@@ -860,7 +860,7 @@ a:active {
 }
 .box-masonry .box-masonry-text p {
   color: #999999;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 .box-masonry .box-masonry-hover-text-header {
   position: absolute;
@@ -2103,7 +2103,6 @@ address {
 }
 a.badge:hover,
 a.badge:focus {
-  color: #ffffff;
   text-decoration: none;
   cursor: pointer;
 }
