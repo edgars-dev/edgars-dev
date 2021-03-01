@@ -1,17 +1,21 @@
 ---
 title: Mars rover
-date: 2021-03-01T08:24:20.133Z
+date: 2017-09-04T07:24:00.000Z
 tags:
   - fun
   - RC
-image: /img/ce829e30b0cc820a5badeaf2a5c5b2e3_preview_featured.jpeg
+image: /img/24f88a68abac601f1ceaf09142dac5be_preview_featured.jpeg
 weight: 1
 ---
 ![](/img/24f88a68abac601f1ceaf09142dac5be_preview_featured.jpeg)
 
-After six months I have finished this Mars Rover project and build one on my own. However, I have made few improvements on mechanical part and made my own electronic control module for this RC vehicle.
+After six months I have finished Mars Rover project and build one on my own. It is based on [this](https://www.thingiverse.com/thing:1318414) thingiverse project. However, I have made few improvements on mechanical part and made my own electronic control module for this RC vehicle.
 
-[Here](https://youtu.be/51CqOedAtc8) is the video with one of the very first tests with a regular RC remote controller just to see if mechanics are ok.[Here](https://youtu.be/aSYueZYvTGg) is the second video with completely finished hardware and testing the bluetooth communication with tablet.
+<!--more-->
+
+One of the very first tests with a regular RC remote controller just to see if mechanics are ok. {{< youtube 51CqOedAtc8 >}}
+
+Second video with completely finished hardware and testing the bluetooth communication with tablet. {{< youtube aSYueZYvTGg >}}
 
 **Overall performance**\
 At first I thought it will be uncomfortable to steer this vehicle with digital joystick, but it turned out that it is actually quite easy and fun.\
