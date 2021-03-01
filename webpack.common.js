@@ -43,8 +43,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       {
-        from: "./src/fonts/",
-        to: "fonts/",
+        from: "./src/webfonts/",
+        to: "webfonts/",
         flatten: true
       }
     ]),
@@ -53,5 +53,11 @@ module.exports = {
       template: 'src/cms.html',
       inject: false,
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      Masonry: "masonry-layout/masonry",
+      ImagesLoaded: "imagesloaded/imagesloaded"
+    })
   ]
 };

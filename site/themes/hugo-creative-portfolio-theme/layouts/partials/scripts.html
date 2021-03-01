@@ -1,15 +1,6 @@
-<script src="{{ "js/jquery.min.js" | absURL }}"></script>
-<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
-<script src="{{ "js/jquery.cookie.js" | absURL }}"> </script>
-<script src="{{ "js/ekko-lightbox.js" | absURL }}"></script>
-<script src="{{ "js/jquery.scrollTo.min.js" | absURL }}"></script>
-<script src="{{ "js/masonry.pkgd.min.js" | absURL }}"></script>
-<script src="{{ "js/imagesloaded.pkgd.min.js" | absURL }}"></script>
-<script src="{{ "js/owl.carousel.min.js" | absURL }}"></script>
-<script src="{{ "js/front.js" | absURL }}"></script>
 {{ $my := .Site.Data.webpack.main }}
-{{ with $my.js }}
-<script src="{{ relURL . }}"></script>
+  {{ with $my.js }}
+  <script src="{{ relURL . }}"></script>
 {{ end }}
 
 {{ if .Site.Params.analytics.matomo }}
