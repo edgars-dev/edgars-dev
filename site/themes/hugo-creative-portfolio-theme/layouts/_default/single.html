@@ -4,14 +4,19 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="content-column-content">
-                <h1>{{ .Title }}</h1>
-                {{ if .Page.Params.viewer }}
-                <div id="viewer" attr-src="{{ .Page.Params.viewer }}"></div>
-                {{ end }}
-                {{ .Content }}
+                <div class="post-content">
+                    <h1>{{ .Title }}</h1>
+                    {{ if .Page.Params.viewer }}
+                    <div id="viewer" attr-src="{{ .Page.Params.viewer }}"></div>
+                    {{ end }}
+                    {{ .Content }}
+                </div>
                 <div class="text-muted text-small">Tags:
-                    {{ range .Page.Params.tags }}
-                    <a href="/?tag={{ . }}">{{ . }}</a>
+                    {{ range (.GetTerms "tags") }}
+                    <a href="{{ .Permalink }}" class="badge badge-pill bg-light text-body border mr-1 my-badge">
+                        <i class="fas fa-tag mr-1"></i>
+                        {{ .LinkTitle }}
+                    </a>
                     {{ end }}
                 </div>
                 {{ template "_internal/disqus.html" . }}
@@ -19,4 +24,5 @@
         </div>
     </div>
 </div>
+{{ partial "photoswipe/single.html" . }}
 {{ end }}

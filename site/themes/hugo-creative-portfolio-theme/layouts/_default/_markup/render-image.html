@@ -1,0 +1,6 @@
+<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="photoswipe-image">
+    <a href="{{ .Destination | safeURL }}" itemprop="contentUrl" data-size="600x400">
+        <img src="{{ .Destination | safeURL }}" itemprop="thumbnail" alt="{{ .Text }}"/>
+    </a>
+<!--        <figcaption itemprop="caption description">Image caption</figcaption>-->
+</figure>

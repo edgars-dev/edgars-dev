@@ -70,6 +70,7 @@
     "imagesloaded": "^4.1.4",
     "jquery": "^3.5.1",
     "masonry-layout": "^4.2.2",
-    "photo-sphere-viewer": "^4.0.2"
+    "photo-sphere-viewer": "^4.0.2",
+    "photoswipe": "^4.1.3"
   }
 }

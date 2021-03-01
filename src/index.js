@@ -14,7 +14,7 @@ $(function() {
   $(".content-column-content pre").wrap('<figure class="highlight" />');
   $(".content-column-content figure > img").addClass("img-fluid");
 
-  $(".content-column-content a").each(function() {
+  $(".content-column-content a:not(.badge)").each(function() {
     if ($(this).attr("href") && $(this).attr("href").indexOf("http") === 0) {
       $(this).attr("target", "_blank");
     }
@@ -24,6 +24,8 @@ $(function() {
   offCanvas();
   highlightCurrentPage();
   makeImagesResponsive();
+
+  $(window).resize();
 });
 
 function highlightCurrentPage() {
@@ -38,10 +40,14 @@ function makeImagesResponsive() {
 function loadMasonry() {
   let grid = $('.grid');
 
-  let msnry = new Masonry( grid[0], {
-    itemSelector: '.masonry-item',
-  })
+  if (!grid[0]) {
+    return;
+  }
+
   new ImagesLoaded(grid, () => {
+    let msnry = new Masonry( grid[0], {
+      itemSelector: '.masonry-item',
+    })
   })
 }
 /* =========================================
@@ -79,6 +85,7 @@ $.fn.alignElementsSameHeight = function () {
     children.innerHeight(maxHeight);
   });
 }
+
 let windowWidth;
 let newWindowWidth;
 

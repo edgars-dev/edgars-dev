@@ -48,6 +48,12 @@ module.exports = {
         flatten: true
       }
     ]),
+    new CopyWebpackPlugin([
+      {
+        from: './node_modules/photoswipe/dist/',
+        to: 'photoswipe/'
+      }
+    ]),
     new HtmlWebpackPlugin({
       filename: 'admin/index.html',
       template: 'src/cms.html',

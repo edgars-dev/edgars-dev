@@ -8,6 +8,7 @@ theme = "hugo-creative-portfolio-theme"
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = "G-8MNJXCBPFP"
+assetDir = "static/img"
 
 [params]
   # Style options: default (pink), blue, green, pink, red, sea, violet
@@ -86,10 +87,6 @@ googleAnalytics = "G-8MNJXCBPFP"
   [[module.mounts]]
     source = "data"
     target = "data"
-
-  [[module.mounts]]
-    source = "assets"
-    target = "assets"
 
   [[module.mounts]]
     source = "i18n"
