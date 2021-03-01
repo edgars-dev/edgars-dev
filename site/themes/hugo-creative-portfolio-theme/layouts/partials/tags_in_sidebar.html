@@ -1,23 +1,9 @@
 <div class="tags mb-5">
-  {{ $page := .GetPage "portfolio" }}
-  {{ $s := slice }}
-  {{ range $page.Pages }}
-
-  {{ if .Params.tags }}
-    {{ range .Params.tags }}
-        {{ $s = $s | append . }}
-    {{ end }}
-  {{ end }}
-
-  {{ end }}
-  Tags: &nbsp;
-  {{ range $s | uniq }}
-    {{ if . }}
-    <a href="/?tag={{ . }}" class="badge badge-pill bg-light text-body border mr-1 my-badge">
-      <i class="fas fa-tag mr-1"></i>
-      {{ . }}
+    Tags: &nbsp;
+    {{ range .Site.Taxonomies.tags }}
+    <a href="{{ .Page.Permalink }}" class="badge badge-pill bg-light text-body border mr-1 my-badge">
+        <i class="fas fa-tag mr-1"></i>
+        {{ .Page.LinkTitle }}
     </a>
     {{ end }}
-  {{ end }}
-
 </div>

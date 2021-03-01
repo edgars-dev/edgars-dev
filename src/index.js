@@ -19,31 +19,4 @@ $(function() {
       $(this).attr("target", "_blank");
     }
   });
-
-  const params = new URLSearchParams(window.location.search);
-
-  if (params.has("tag") && params.get("tag")) {
-    $(".masonry-item[data-tags]").each(function() {
-      if ($(this).data("tags").indexOf(params.get("tag")) === -1) {
-        $(this).hide();
-      }
-    });
-
-    const icon = $("<i>", {
-      class: "fa fa-times"
-    });
-
-    const tag = params.get("tag").length > 10 ? params.get("tag").slice(0, 10) + "..." : params.get("tag");
-    const button = $("<button>", {
-      text: tag,
-      class: "clear-tag-button"
-    });
-
-    button.on('click', function () {
-      window.location.href = "/portfolio";
-    })
-
-    $('.content-column').prepend(button.append(icon));
-  }
-
 });
