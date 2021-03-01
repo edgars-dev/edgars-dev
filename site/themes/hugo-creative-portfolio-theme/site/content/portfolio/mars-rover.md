@@ -9,7 +9,7 @@ weight: 1
 ---
 ![](/img/24f88a68abac601f1ceaf09142dac5be_preview_featured.jpeg)
 
-After six months I have finished Mars Rover project and build one on my own. It is based on [this](https://www.thingiverse.com/thing:1318414) thingiverse project. However, I have made few improvements on mechanical part and made my own electronic control module for this RC vehicle.
+After six months I have finished Mars Rover project and build one on my own. It is based on other [project](https://www.thingiverse.com/thing:1318414) that was published on thingiverse. However, I have made few improvements on mechanical part and made my own electronic control module for this RC vehicle.
 
 <!--more-->
 
