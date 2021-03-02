@@ -187,12 +187,16 @@
     };
 
     // loop through all gallery elements and bind events
-    var galleryElements = document.querySelectorAll(gallerySelector);
+      let galleryElements = document.querySelectorAll(gallerySelector);
 
-    for (var i = 0, l = galleryElements.length; i < l; i++) {
-      galleryElements[i].setAttribute('data-pswp-uid', i + 1);
-      galleryElements[i].onclick = onThumbnailsClick;
-    }
+      for (let i = 0, l = galleryElements.length; i < l; i++) {
+          galleryElements[i].setAttribute('data-pswp-uid', i + 1);
+
+          let thumbElements = galleryElements[i].getElementsByClassName('photoswipe-image');
+          for (let j = 0, k = thumbElements.length; j < k; j++) {
+              thumbElements[j].onclick = onThumbnailsClick;
+          }
+      }
 
     // Parse URL and open gallery if it contains #&pid=3&gid=1
     var hashData = photoswipeParseHash();
