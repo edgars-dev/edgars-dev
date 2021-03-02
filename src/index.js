@@ -26,6 +26,11 @@ $(function() {
   makeImagesResponsive();
 
   $(window).resize();
+
+  $('.external').on('click', function (e) {
+    e.preventDefault();
+    window.open($(this).attr("href"));
+  });
 });
 
 function highlightCurrentPage() {
