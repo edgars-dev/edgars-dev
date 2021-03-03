@@ -1,11 +1,14 @@
 {{ $dest := replace (printf "%s" (.Destination | safeURL)) "/img/" "" }}
 {{ $dest := replace $dest "/uploads/" "" }}
 
-{{ $image := resources.GetMatch $dest }}
-{{ $small := $image.Resize "480x" }}
-{{ $big := $image.Fit "1280x1280" }}
-<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="photoswipe-image">
-    <a href="{{ $big.Permalink | safeURL }}" itemprop="contentUrl" data-size="{{ $big.Width }}x{{ $big.Height }}">
-        <img src="{{ $small.Permalink | safeURL }}" itemprop="thumbnail" alt="{{ .Text }}"/>
-    </a>
-</figure>
+{{ $page := .Page.Site.GetPage "uploads" }}
+{{ $image := $page.Resources.GetMatch $dest }}
+{{ with $image }}
+    {{ $small := $image.Resize "480x" }}
+    {{ $big := $image.Fit "1280x1280" }}
+    <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" class="photoswipe-image">
+        <a href="{{ $big.Permalink | safeURL }}" itemprop="contentUrl" data-size="{{ $big.Width }}x{{ $big.Height }}">
+            <img src="{{ $small.Permalink | safeURL }}" itemprop="thumbnail" alt="{{ .Title }}"/>
+        </a>
+    </figure>
+{{ end }}
