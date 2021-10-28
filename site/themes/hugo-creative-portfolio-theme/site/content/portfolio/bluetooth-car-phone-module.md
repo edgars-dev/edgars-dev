@@ -11,11 +11,9 @@ weight: 1
 ---
 ![](/uploads/img_6866.jpeg)
 
+My car had an integrated phone module that works together with radio, speakers and has its own speaker and microphone. Problem was that it it is a bit outdated, because only way how to use it to put a SIM card in it. <!--more-->It is not very convenient. So I wanted to leave everything as original as possible just to "replace" sim card feature with bluetooth so that it connects to mobile phone and everything else is the same.
 
 
-My car had an integrated phone module that works together with radio, speakers and has its own speaker and microphone. Problem was that it it is a bit outdated, because only way how to use it to put a SIM card in it. It is not very convenient. So I wanted to leave everything as original as possible just to "replace" sim card feature with bluetooth so that it connects to mobile phone and everything else is the same.
-
-<!--more-->
 
 ![](/uploads/img_6867.jpeg)
 
@@ -36,8 +34,6 @@ This is replacement board for SIM card acceptor. Matchbox for size comparison. I
 ![](/uploads/img_6862.jpeg)
 
 Different view from assembled module.
-
-
 
 **Things still to do:**
 
